@@ -1,6 +1,12 @@
-# Dự án: Vastopolis Epidemic Analysis - Nhóm AIT2006-1-2.4
+# Vastopolis Epidemic Analysis - AIT2006-1-2.4
 
-## Cấu trúc thư mục
+[Tiếng Việt](#tiếng-việt) | [English](#english)
+
+---
+
+## Tiếng Việt
+
+### Cấu trúc thư mục
 
 ```
 ├── raw/                    # Chứa dữ liệu thô
@@ -11,35 +17,71 @@
 ├── requirements.txt        # Các thư viện cần thiết
 └── README.md               # Hướng dẫn sử dụng
 ```
-## Yêu cầu hệ thống
+
+### Yêu cầu hệ thống
 
 - Python: 3.13
 - Môi trường: miniconda
-- Các thư viện được liệt kê trong requirements.txt
+- Các thư viện được liệt kê trong `requirements.txt`
 
-## Hướng dẫn chạy lại (Reproducibility)
+### Hướng dẫn chạy lại (Reproducibility)
 
 **Bước 1:** Cài đặt thư viện
 
-```
-# Cài đặt thư viện
+```bash
 pip install -r requirements.txt
 ```
 
+**Bước 2:** Chạy các notebook trong thư mục `src/` theo thứ tự sau để tái tạo kết quả:
 
-**Bước 2:** Chạy các notebook trong thư mục **/src** theo thứ tự sau để tái tạo kết quả:
+1. `2_data_cleaning.ipynb`: Đọc dữ liệu thô, làm sạch và chuẩn hóa văn bản.
+2. `3_aggregate_data.ipynb`: Nối dữ liệu thời tiết, thống kê từ khóa theo giờ.
+3. `4_visualize_data.ipynb`: Vẽ bản đồ và các biểu đồ phân tích.
+4. `main_data_visual`: Các biểu đồ phân tích nâng cao.
 
-1. 2_data_cleaning.ipynb: Đọc dữ liệu thô, làm sạch và chuẩn hóa văn bản.
+### Kết quả chính
 
-2. 3_aggregate_data.ipynb: Nối dữ liệu thời tiết, thống kê từ khóa theo giờ.
+- Báo cáo chi tiết: `reports/report-AIT2006-1-2.4.pdf`
+- Commit hash bản nộp: `0c78b600ddd393c869c3a4f76f0983ba6f702fc5`
 
-3. 4_visualize_data.ipynb: Vẽ bản đồ và các biểu đồ phân tích.
+---
 
-4. main_data_visual: các biểu đồ phân tích nâng cao
+## English
 
+### Folder Structure
 
-## Kết quả chính
+```
+├── raw/                    # Raw data
+├── processed/              # Cleaned data and summary tables
+├── figures/                # Output charts (.png)
+├── reports/                # PDF reports and LaTeX files
+├── src/                    # Main source notebooks
+├── requirements.txt        # Required dependencies
+└── README.md               # Usage guide
+```
 
-- Báo cáo chi tiết: reports/report-AIT2006-1-2.4.pdf
+### System Requirements
 
-- Commit hash bản nộp: 0c78b600ddd393c869c3a4f76f0983ba6f702fc5
+- Python: 3.13
+- Environment: miniconda
+- Dependencies listed in `requirements.txt`
+
+### Reproducibility Guide
+
+**Step 1:** Install dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+**Step 2:** Run notebooks in `src/` in this order:
+
+1. `2_data_cleaning.ipynb`: Load raw data, clean it, and normalize text.
+2. `3_aggregate_data.ipynb`: Merge weather data and compute hourly keyword statistics.
+3. `4_visualize_data.ipynb`: Generate maps and analysis charts.
+4. `main_data_visual`: Advanced analysis visualizations.
+
+### Main Outputs
+
+- Detailed report: `reports/report-AIT2006-1-2.4.pdf`
+- Submission commit hash: `0c78b600ddd393c869c3a4f76f0983ba6f702fc5`
