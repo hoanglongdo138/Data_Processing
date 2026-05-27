@@ -37,7 +37,7 @@ pip install -r requirements.txt
 1. `2_data_cleaning.ipynb`: Đọc dữ liệu thô, làm sạch và chuẩn hóa văn bản.
 2. `3_aggregate_data.ipynb`: Nối dữ liệu thời tiết, thống kê từ khóa theo giờ.
 3. `4_visualize_data.ipynb`: Vẽ bản đồ và các biểu đồ phân tích.
-4. `main_data_visual`: Các biểu đồ phân tích nâng cao.
+4. `main_data_visual.ipynb`: Các biểu đồ phân tích nâng cao.
 
 ### Kết quả chính
 
@@ -79,7 +79,7 @@ pip install -r requirements.txt
 1. `2_data_cleaning.ipynb`: Load raw data, clean it, and normalize text.
 2. `3_aggregate_data.ipynb`: Merge weather data and compute hourly keyword statistics.
 3. `4_visualize_data.ipynb`: Generate maps and analysis charts.
-4. `main_data_visual`: Advanced analysis visualizations.
+4. `main_data_visual.ipynb`: Advanced analysis visualizations.
 
 ### Main Outputs
 
